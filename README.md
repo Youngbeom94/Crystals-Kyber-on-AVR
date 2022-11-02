@@ -23,6 +23,7 @@ The code for this project is provided in two versions. The `stack` version is th
 - `stack`
   + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
   + Using [XKCP](https://github.com/XKCP/XKCP) library for sha3 and SHAKE
+  + Signed Barrett/Montgomery reduction[[Seiler2018](https://eprint.iacr.org/2018/039.pdf)]
   + Hand-written assembly NTT and Inverse NTT
 - `speed`
   + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
@@ -30,4 +31,5 @@ The code for this project is provided in two versions. The `stack` version is th
   + Better Accumulation [[Amin2022](https://eprint.iacr.org/2022/112)]
   + Pre-hased public key for Kyber.CCAKEM Encapsulation
   + Using [XKCP](https://github.com/XKCP/XKCP) library for sha3 and SHAKE
+  + Signed Barrett/Montgomery reduction[[Seiler2018](https://eprint.iacr.org/2018/039.pdf)]
   + Hand-written assembly NTT and Inverse NTT
