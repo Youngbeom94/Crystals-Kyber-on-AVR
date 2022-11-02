@@ -2,7 +2,7 @@
 
 This code accompanies the paper "Efficient Implementation of Crystals-Kyber on 8-bit AVR environment" published in CICS-W22(maybe...).
 
-Please email <darania@kookmin.ac.kr> if you have any suggestions for additions or improvements of my code. In the future, the goal of this project is to selected Post-Quantum Cryptography in constrained devices such as 8-bit AVR and 16-bit MSP430. Ultimately, I would like to design a PQC library for an AVR environment with minimal stack usage. If you have input about what should be covered, I'd be grateful for any input.
+Please email <darania@kookmin.ac.kr> if you have any suggestions for additions or improvements of my code. In the future, the goal of this project is to selected Post-Quantum Cryptography in constrained devices such as 8-bit AVR and 16-bit MSP430. Ultimately, I would like to design a PQC library for an AVR environment with minimal stack usage. If you have input about what should be covered, I'd be grateful for any input. [Google][https://google.com]
 
 
 ## Abstract
@@ -15,6 +15,6 @@ Post-Quantum Cryptography generally requires lower performance and higher memory
 - It aims to apply as much as possible all the latest optimization implementation techniques for Crystals-Kyber. Additionally, assembly code for NTT for AVR environment is provided. Unfortunately, the merge technique for NTT implementation could not be applied due to the limitation of general-purpose registers. Perhaps this will become a new research topic in the future.
 
 
-## Build
+## Setup/Build
 
-## Performance
+## Code
