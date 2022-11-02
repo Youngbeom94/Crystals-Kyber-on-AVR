@@ -16,6 +16,6 @@ Post-Quantum Cryptography generally requires lower performance and higher memory
 
 
 ## Setup/Build
-We simulate using [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio). Please generate a new project, move the source code and run it. As for the compilation option, 'O3' for speed version and 'Os' for stack version was used. The choice of board depends on the security level of Crystals-Kyber. However, it is recommended to select the ATmega1284p with 16,384 bytes of SRAM for smooth execution at all security levels.
+We simulate using [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio). Please generate a new project, move the source code and run it. As for the compilation option, `O3` for speed version and `Os` for stack version was used. The choice of board depends on the security level of Crystals-Kyber. However, it is recommended to select the ATmega1284p with 16,384 bytes of SRAM for smooth execution at all security levels.
 
 ## Code
