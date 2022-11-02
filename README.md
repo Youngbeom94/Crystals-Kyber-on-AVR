@@ -1,4 +1,4 @@
-# Crystals-Kyber-on-AVR
+# Crystals-Kyber on 8-bit AVR environment
 
 This code accompanies the paper "Efficient Implementation of Crystals-Kyber on 8-bit AVR environment" published in CICS-W22(maybe...).
 
