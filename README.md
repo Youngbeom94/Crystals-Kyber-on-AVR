@@ -19,7 +19,15 @@ Post-Quantum Cryptography generally requires lower performance and higher memory
 We simulate using [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio). Please generate a new project, move the source code and run it. As for the compilation option, `avr-gcc -O3` for speed version and `avr-gcc -Os` for stack version was used. The choice of board depends on the security level of Crystals-Kyber. However, it is recommended to select the `ATmega1284p` with 16,384 bytes of SRAM for smooth execution at all security levels.
 
 ## Code
-- `speed`
-  + hello
+The code for this project is provided in two versions. The `stack` version is the code implemented using a minimal stack, and the `speed` version achieves higher speed instead of using additional stacks. The optimization methods applied to each version are as follows: 
 - `stack`
-  + hello
+  + Streaming public matrix A and noise e 
+  + Using XKCP library
+  + Hand-written assembly NTT and Inverse NTT
+- `speed`
+  + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
+  + Asymmetric multiplication
+  + Better Accumulation
+  + Pre-hased public key
+  + Using XKCP library
+  + Hand-written assembly NTT and Inverse NTT
