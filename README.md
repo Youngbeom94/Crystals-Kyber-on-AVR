@@ -28,6 +28,6 @@ The code for this project is provided in two versions. The `stack` version is th
   + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
   + Asymmetric multiplication [[Becker2021](https://eprint.iacr.org/2021/986)]
   + Better Accumulation [[Amin2022](https://eprint.iacr.org/2022/112)]
-  + Pre-hased public key
+  + Pre-hased public key for `Kyber.CCAKEM Encapsulation`
   + Using [XKCP](https://github.com/XKCP/XKCP) library for sha3 and SHAKE
   + Hand-written assembly NTT and Inverse NTT
