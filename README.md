@@ -21,13 +21,13 @@ We simulate using [Microchip Studio](https://www.microchip.com/en-us/tools-resou
 ## Code
 The code for this project is provided in two versions. The `stack` version is the code implemented using a minimal stack, and the `speed` version achieves higher speed instead of using additional stacks. The optimization methods applied to each version are as follows: 
 - `stack`
-  + Streaming public matrix A and noise e 
-  + Using XKCP library
+  + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
+  + Using [XKCP](https://github.com/XKCP/XKCP) library
   + Hand-written assembly NTT and Inverse NTT
 - `speed`
   + Streaming public matrix A and noise e [[PQM4](https://github.com/mupq/pqm4)]
-  + Asymmetric multiplication
-  + Better Accumulation
+  + Asymmetric multiplication [[Becker2021](https://eprint.iacr.org/2021/986)]
+  + Better Accumulation [[Amin2022](https://eprint.iacr.org/2022/112)]
   + Pre-hased public key
-  + Using XKCP library
+  + Using [XKCP](https://github.com/XKCP/XKCP) library
   + Hand-written assembly NTT and Inverse NTT
