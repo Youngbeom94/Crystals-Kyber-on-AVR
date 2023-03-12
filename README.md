@@ -1,6 +1,6 @@
 # Crystals-Kyber on 8-bit AVR environment
 
-This project is accompanied by my master's thesis "Efficient Implementation of Post-Quantum Cryptography Crystals-Kyber on 8-bit AVR microcontroller".
+This project is accompanied by my master degree's paper "Efficient Implementation of Post-Quantum Cryptography Crystals-Kyber on 8-bit AVR microcontroller".
 
 Please email <darania@kookmin.ac.kr> if you have any suggestions for additions or improvements of my code. In the future, the goal of this project is to implement Post-Quantum Cryptography in constrained devices such as 8-bit AVR and 16-bit MSP430. Ultimately, I would like to design a PQC library for an AVR environment with minimal stack usage. If you have input about what should be covered, I'd be grateful for any input.
 
