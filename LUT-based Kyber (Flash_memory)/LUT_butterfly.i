@@ -3,7 +3,6 @@
  * LUT_butterfly.i
  *
  * Created: 2023-03-19 오후 4:46:06
- *  Author: youngbeom
  */ 
 
 .macro mc_small_LUT_reduce_asm zero, src_l, src_h, t_l

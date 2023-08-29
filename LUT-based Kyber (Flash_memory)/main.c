@@ -2,7 +2,6 @@
  * GccApplication1.c
  *
  * Created: 2023-03-18 오후 12:07:09
- * Author : youngbeom
  */ 
 #include "ntt.h"
 #include <avr/io.h>

@@ -3,13 +3,12 @@
  * reduce.S
  *
  * Created: 2023-03-18 오후 3:41:25
- *  Author: youngbeom
  */ 
 
  #include "LUT_butterfly.i"
  #include "common.i"
-.section .text
 
+ .section .data
 .global	LUT1_H
 .type	LUT1_H, @object
 
@@ -233,6 +232,9 @@ LUT3_L : .byte	0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0xFF,\
 				0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x01, 0x01,\
 				0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00
 
+
+.section .text
+
 #define zero	r1
 #define	src_l	r24
 #define	src_h	r25
@@ -274,17 +276,17 @@ LUT_reduce_asm :
 
 	andi	src_lh,			0x0F
 	ldi		r31,			hi8(LUT2_H)
-	lpm		tmp_h,			Z
+	ld		tmp_h,			Z
 	ldi		r31,			hi8(LUT2_L)
-	lpm		tmp_l,			Z
+	ld		tmp_l,			Z
 	add		src_ll,			tmp_l
 	adc		src_lh,			tmp_h 
 	
 	mov		r30,			src_hl
 	ldi		r31,			hi8(LUT1_H)
-	lpm		src_hh,			Z
+	ld		src_hh,			Z
 	ldi		r31,			hi8(LUT1_L)
-	lpm		src_hl,			Z
+	ld		src_hl,			Z
 	add		src_hl,			src_ll
 	adc		src_hh,			src_lh
 

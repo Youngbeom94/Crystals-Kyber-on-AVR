@@ -2,7 +2,6 @@
  * zetas.c
  *
  * Created: 2023-03-24 오전 10:37:03
- *  Author: youngbeom
  */ 
 #include <stdint.h>
 

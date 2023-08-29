@@ -3,7 +3,6 @@
  * LUT_ntt.S
  *
  * Created: 2023-03-19 오후 5:36:44
- *  Author: youngbeom
  */ 
  
  #include "mul_asm.i"

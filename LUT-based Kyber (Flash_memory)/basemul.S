@@ -3,7 +3,6 @@
  * basemul.S
  *
  * Created: 2023-03-22 오후 2:47:57
- *  Author: youngbeom
  */ 
 
 #include "common.i"

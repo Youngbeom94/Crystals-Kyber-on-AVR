@@ -2,7 +2,6 @@
  * IncFile1.h
  *
  * Created: 2022-08-09 오후 12:49:57
- *  Author: youngbeom
  */ 
 
 

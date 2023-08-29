@@ -3,7 +3,6 @@
  * LUT_invntt.S
  *
  * Created: 2023-03-23 오후 12:54:37
- *  Author: youngbeom
  */ 
 .section .text
 #include "LUT_butterfly.i"
@@ -779,7 +778,7 @@ Layer4:
 	ldi		zetas_h,	0x03
 
 400:
-	mc_LUT_no_ss_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 	dec		loop_cnt
 	brne	400b
@@ -790,7 +789,7 @@ Layer4:
 	ldi		zetas_h,	0x07
 
 401:
-	mc_LUT_no_ss_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 
 	dec		loop_cnt
@@ -803,7 +802,7 @@ Layer4:
 	ldi		zetas_h,	0x02
 
 402:
-	mc_LUT_no_ss_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 
 	dec		loop_cnt
@@ -815,7 +814,7 @@ Layer4:
 	ldi		zetas_h,	0x0A
 
 403:
-	mc_LUT_no_ss_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 
 	dec		loop_cnt
@@ -833,7 +832,7 @@ Layer5:
 	ldi		zetas_h,	0x0C
 
 500:
-	mc_LUT_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_no_ss_GSbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 	dec		loop_cnt
 	brne	500b
@@ -844,7 +843,7 @@ Layer5:
 	ldi		zetas_h,	0x0A
 
 501:
-	mc_LUT_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
+	mc_LUT_no_ss_GSbutterfly_backward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\
 								tmp_integer, res_l, res_h, tmp_ll, tmp_lh, tmp_hl, tmp_hh, zero, res_mul_l, res_mul_h 
 
 	dec		loop_cnt

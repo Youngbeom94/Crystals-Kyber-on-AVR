@@ -3,7 +3,6 @@
  * LUT_Nx_butterfly.i
  *
  * Created: 2023-03-21 오후 9:50:44
- *  Author: youngbeom
  */ 
 
 .macro mc_LUT_x2_CTbutterfly_forward coeffs1_l, coeffs1_h, coeffs2_l, coeffs2_h, zetas_l, zetas_h, tmp_addr_l, tmp_addr_h,\

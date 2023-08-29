@@ -3,7 +3,6 @@
  * common.i
  *
  * Created: 2022-10-14 오전 2:02:43
- *  Author: youngbeom
  */ 
 
  .macro mc_prolog from:req, to:req
